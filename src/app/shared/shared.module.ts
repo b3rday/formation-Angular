@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu/menu.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
+import { StateDirective } from './state.directive';
 
 @NgModule({
   imports: [
@@ -11,10 +12,11 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   declarations: [
-    MenuComponent
+    MenuComponent,
+    StateDirective
   ],
   exports : [
-    MenuComponent
+    MenuComponent, StateDirective
   ]
 })
 export class SharedModule { }
