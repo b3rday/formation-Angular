@@ -22,7 +22,6 @@ import { environment } from '../environments/environment';
     CoreModule,
     HomeModule,
     PageNotFoundModule,
-    ItemsModule,
     NgbModule.forRoot(),
     SharedModule
   ],
