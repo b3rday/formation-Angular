@@ -9,7 +9,7 @@ export class CollectionService {
   _collection: Item[];
 
   constructor() {
-   /* this.collection = [
+    this.collection = [
       {
         id : '1',
         name : 'myname',
@@ -31,7 +31,7 @@ export class CollectionService {
 
    set collection(col: Item[]) {
      this._collection = col;
-   }*/
+   }
 
 }
-}
+
