@@ -1,37 +1,43 @@
 import { Injectable } from '@angular/core';
 import { Item } from './item.model';
+import { Observable, from, of } from 'rxjs';
+
+import { State } from '../items/state.enum';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CollectionService {
 
-  _collection: Item[];
+  collection$: Observable<Item[]>;
+
+ // collection:Item[];
 
   constructor() {
-    this.collection = [
+    const collection: Item[] = [
       {
         id : '1',
         name : 'myname',
         reference : '666',
-        state : 'FR'
+        state : State.ALIVRER
       },
       {
         id : '2',
         name : 'myname2',
         reference : '667',
-        state : 'UK'
+        state : State.LIVREE
       }
     ];
+    this.collection$ = of(collection);
    }
-
+/*
    get collection(): Item[] {
-     return this._collection;
+     return this.collection;
    }
 
    set collection(col: Item[]) {
-     this._collection = col;
+     this.collection = col;
    }
-
+*/
 }
 

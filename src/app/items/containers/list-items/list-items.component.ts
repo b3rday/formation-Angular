@@ -8,10 +8,16 @@ import { CollectionService } from '../../../core/collection.service';
 })
 export class ListItemsComponent implements OnInit {
 
+ // collection: Item [];
   constructor(public collectionService: CollectionService) {
   }
 
   ngOnInit() {
+
+   /* this.collectionService.collection$.subscribe((items:Item[]) =>{
+  this.collection = items;
+
+  )}*/
   }
 
 

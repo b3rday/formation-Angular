@@ -1,6 +1,7 @@
 
-
-  <div *ngFor="let item of collectionService.collection ">
+<div class='container'>
+  <ng-container *ngFor="let item of (collectionService.collection$|async) ">
 <app-item [value]='item'></app-item>
-  </div>
+</ng-container>
+</div>
 

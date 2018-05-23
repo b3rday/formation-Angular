@@ -6,7 +6,7 @@ import { AddComponent } from './containers/add/add.component';
 
 
 const itemsRoutes: Routes = [
-  // l'orde des deux lignes est pris en compte
+  // l'ordre des deux lignes est pris en compte
 
   {path: '', redirectTo: 'list', pathMatch: 'full'},
   {path: 'add', component: AddComponent},
