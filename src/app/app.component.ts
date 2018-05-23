@@ -7,16 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'app';
-
-  bg = 'red';
 
   constructor() {
-    this.activate();
+
   }
 
-  activate = () => {
-    this.title = 'OH';
-  }
+
 
 }

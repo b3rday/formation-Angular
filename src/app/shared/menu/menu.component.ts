@@ -7,17 +7,19 @@ import { Input } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+title: string;
+isCollapsed: Boolean;
 
-  @Input('val')
-  val: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.title = 'my super app' ;
+    this.isCollapsed = true;
   }
 
-  onClick() {
+  /*onClick() {
     alert('test');
-  }
+  }*/
 
 }
